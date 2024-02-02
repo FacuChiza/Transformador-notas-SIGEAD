@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/estilo.css">
+
+  <!-- Nombre de la pestaña -->
+  <title>Transformador de Notas SIGEAD</title>
+</head>
+
+<body>
+  <!-- Titulo página -->
+  <h1>Subir Archivo de Notas</h1>
+
+  <!-- Formulario -->
+  <form method="post" enctype="multipart/form-data">
+
+    <!-- Nombre de materia -->
+    <div>
+      <label for="materia">Nombre de la Materia: </label>
+      <input type="text" name="materia" required>
+    </div>
+    
+    <!-- Codigo de materia -->
+    <div>
+      <label for="codigo-materia">Codigo de la Materia: </label>
+      <input type="number" name="codigo-materia" required>
+    </div>
+    
+    <!-- Carga de archivo con notas -->
+    <div>
+      <input type="file" name="file" accept=".xlsx, .xls, .ods" required>
+    </div>
+    
+    <!-- Procesar archivo -->
+    <div>
+      <button type="submit">Procesar Archivo</button>
+    </div>
+
+
+
+  </form>
+</body>
+</html>
