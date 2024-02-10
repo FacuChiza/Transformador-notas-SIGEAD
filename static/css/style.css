@@ -1,0 +1,51 @@
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.cont-titulo{
+    display: flex;
+    justify-content: center;
+    padding-top: 6vh;
+}
+
+.cont-form{
+    background-color: rgb(236, 171, 171);
+    padding: 30px 50px;
+    border-radius: 25px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    box-shadow: 2px 5px 20px black;
+}
+
+.cont-principal{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-bottom: 20vh;
+}
+
+.form label, .form input, .form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form input[type="file"], .form button[type="submit"], .form input[type="text"], .form input[type="number"]{
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.form input[type="text"], .form input[type="number"]{
+    background-color: rgb(231, 231, 231);
+}
+
+.form button[type="submit"]:hover{
+    background-color: rgb(199, 200, 201);
+}

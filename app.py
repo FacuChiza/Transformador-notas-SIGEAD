@@ -21,6 +21,7 @@ def upload_file():
     
     file.save(os.path.join("uploads", filename))
     
+    
     df = pd.read_excel(os.path.join("uploads", filename))
     df.columns = ["Nom", "Ape", "Num", "Inst", "Depa", "Cues", "Ult"]
     df = df.drop(columns=["Nom", "Ape", "Inst", "Ult"])
