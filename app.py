@@ -27,7 +27,7 @@ def upload_file():
   codigo_materia = request.form['codigo-materia']
 
   if file and materia:
-    filename = f"Notas Transformadas {materia}.csv"
+    filename = f"Archivo Transformado {materia}.csv"
     
     os.makedirs("uploads", exist_ok=True)
     file.save(os.path.join("uploads", filename))
