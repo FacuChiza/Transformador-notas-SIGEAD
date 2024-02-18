@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Error de Carga</title>
+</head>
+<body>
+    <header class="cont-tit-aviso">
+        <div class="tit-aviso">
+            <div class="cont-tit">
+                <h1>Error de Carga</h1>
+            </div>
+            <div class="cont-aviso">
+                <p>El archivo cargado no cumple los requisitos para ser procesado.</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="cont-req-ej">
+        <div class="req-ej">
+            <div class="cont-req">
+                <p class="tit-req">Los requisitos para cargar el archivo son:</p>
+                <ul class="list-req">
+                    <li class="req">-Ser un archivo .xlsx, .csv u .ods</li>
+                    <li class="req">-El archivo debe tener 7 columnas.</li>
+                    <li class="req">-Las notas deben estar ubicadas en la columna "Cuestionario".</li>
+                </ul>
+            </div>
+            <div class="txt-ej">
+                Aquí un ejemplo de un archivo correcto:
+            </div>
+            <div class="img-ej">
+                <img src="{{ url_for('static', filename='css/images/ejemplo.png' ) }}" alt="Imagen de ejemplo">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
